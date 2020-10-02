@@ -18,5 +18,13 @@ barba.init({
         console.log("afterOnce");
       },
     },
+    {
+      name: "fade",
+      to: {
+        namespace: ["fade"],
+      },
+      leave() {},
+      enter() {},
+    },
   ],
 });
