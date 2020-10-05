@@ -4,7 +4,7 @@
 }
 
 .clip-leave-active {
-  transition: opacity 1.2s linear 0.3s;
+  transition: all 0.75s linear;
 }
 
 .clip-leave-to {
@@ -12,13 +12,16 @@
 }
 
 .clip-enter {
-  opacity: 0;
+  clip-path: circle(0%);
 }
 
 .clip-enter-active {
-  transition: opacity 1.2s linear;
+  transition: all 1.2s linear;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
 .clip-enter-to {
-  opacity: 1;
+  clip-path: circle(75%);
 }

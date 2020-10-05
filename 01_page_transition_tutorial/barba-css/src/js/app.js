@@ -36,11 +36,15 @@ barba.init({
     },
     {
       name: 'clip',
+      sync: true,
       to: {
         namespace: ['clip'],
       },
       leave() {},
       enter() {},
+      beforeEnter() {
+        console.log('beforeEnter');
+      },
     },
   ],
 });
