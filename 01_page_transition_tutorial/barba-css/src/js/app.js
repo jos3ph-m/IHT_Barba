@@ -34,5 +34,13 @@ barba.init({
       leave() {},
       enter() {},
     },
+    {
+      name: 'clip',
+      to: {
+        namespace: ['clip'],
+      },
+      leave() {},
+      enter() {},
+    },
   ],
 });

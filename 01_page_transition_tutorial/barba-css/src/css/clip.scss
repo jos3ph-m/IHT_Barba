@@ -1,1 +1,24 @@
 /* Clip-path transition */
+.clip-leave {
+  opacity: 1;
+}
+
+.clip-leave-active {
+  transition: opacity 1.2s linear 0.3s;
+}
+
+.clip-leave-to {
+  opacity: 0;
+}
+
+.clip-enter {
+  opacity: 0;
+}
+
+.clip-enter-active {
+  transition: opacity 1.2s linear;
+}
+
+.clip-enter-to {
+  opacity: 1;
+}
