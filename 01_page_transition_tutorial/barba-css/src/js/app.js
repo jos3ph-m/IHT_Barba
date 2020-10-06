@@ -16,15 +16,14 @@ barba.hooks.before((data) => {
 barba.init({
   transitions: [
     {
-      beforeOnce() {
-        console.log('beforeOnce');
+      name: 'home',
+      to: {
+        namespace: ['home'],
       },
-      once() {
-        console.log('once');
-      },
-      afterOnce() {
-        console.log('afterOnce');
-      },
+      sync: true,
+      once() {},
+      leave() {},
+      enter() {},
     },
     {
       name: 'fade',
